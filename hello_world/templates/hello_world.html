@@ -1,0 +1,36 @@
+<h1><center>Personal Profile</center></h1>
+<h2><center>Tetach Rattanavikran</center></h2>
+
+{% load static %}
+<center><img src="{% static 'media/profile.jpg' %}"/></center>
+
+<h3><center>*******</center></h2>
+
+<center><table style="width:80%">
+    <tr>
+      <th>🎉 Date Of Birth</th>
+      <th>💻 Programming Experience</th>
+      <th>📸 Hobbies</th>
+      <th>💕 Email</th>
+    </tr>
+    <tr>
+      <td><center>28 March 2000</center></td>
+      <td><center>Django, Vue, HTML</center></td>
+      <td><center>Writing Novel (Especially BL), Photographing, Filming</center></td>
+      <td><center>tetach.r@ku.th</center></td>
+    </tr>
+  </table></center>
+
+<h3><center></center></h2>
+
+<h2><center>📣 Contact Me!</center></h2>
+
+<center>
+{% block contact %}
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p}}
+    <input type="submit" value="Submit">
+</form>
+{% endblock %}
+</center>
