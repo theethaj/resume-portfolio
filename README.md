@@ -7,8 +7,8 @@ Portfolio Website for 01219449 Principle of Software Architecture, Kasetsart Uni
 
 1. Clone this repository and change your current working directory 
 ```bash
-    git clone https://github.com/Wijantra/portfolio-project
-    cd portfolio-project
+    git clone https://github.com/theethaj/resume-portfolio
+    cd resume-portfolio
 ```
 
 2. Install virtual enviroment
